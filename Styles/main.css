@@ -1,0 +1,274 @@
+
+html {
+    background: url(/Images/pizza.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 1250px;
+}
+body{
+    background-color: transparent;
+}
+/**
+Styles for Header
+ */
+header{
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    background-color: transparent;
+}
+
+main.anmeldung{
+    width: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.navbar {
+    background: transparent;
+    min-height: 60px;
+    opacity: .8;
+}
+
+.nav-item {
+    margin-right: 55px;
+}
+.nav-item a{
+    color:white;
+    font-size:16px ;
+}
+
+.container-box{
+    display: flex;
+    padding: 20px 150px;
+    border: 1px solid darkslateblue;
+    flex-direction: column;
+}
+
+.container-box-suppliers {
+    display: flex;
+    flex-direction: column;
+    border:2px solid blue;
+}
+
+.container-white-background{
+    background-color: white;
+    width: 800px;
+    border-radius: 45px 0 ;
+    height: 500px;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.suppl-all{
+    background-color: white;
+    width: 800px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+}
+
+.supplier-box{
+    width:250px;
+    height: 200px;
+    border: 2px solid blue;
+
+
+}
+
+.container{
+    display: flex;
+    max-width: 100%;
+    width: 1200px;
+    min-height: 650px;
+    justify-content: center;
+    margin-top: 250px;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+}
+
+.container-anmeldung{
+    display: flex;
+    max-width: 100%;
+    width: 500px;
+    min-height: 450px;
+    justify-content: center;
+    margin-top: 280px;
+    background-color: transparent;
+}
+
+.container-endorder{
+
+}
+
+.btn
+{
+    outline:0;
+    border:none;
+    border-top:none;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    box-shadow:inset 2px -3px rgba(0,0,0,0.15);
+}
+.btn:focus
+{
+    outline:0;
+    -webkit-outline:0;
+    -moz-outline:0;
+}
+
+.form-signin {
+    width: 380px;
+    height: 420px;
+    padding: 25px;
+    margin: 0 auto;
+
+
+
+
+}
+.form-signin .form-signin-heading, .form-signin {
+    margin-bottom: 10px;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-color: #000;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: rgb(0,0,0);
+    border-top:1px solid rgba(0,0,0,0.08);
+}
+.form-signin-heading {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+/**
+Styles for Footer
+ */
+footer{
+    position: fixed;
+    width: 100%;
+    display: block;
+
+}
+
+.page-foot{
+    font-size: 14px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    opacity: .8;
+
+}
+
+
+ a.nav-link2{
+
+     font: 18px bold;
+}
+
+ .nav-2link{
+     margin-right: 730px;
+ }
+
+ .error{
+     background-color: white;
+     font: 20px bold;
+     border-radius: 5px;
+     padding: 10px;
+ }
+
+.ordersubmit:hover {
+    background-image: linear-gradient(#337ab7, #062256);
+    cursor: pointer;
+}
+
+.ordersubmit {
+    margin: 15px 10px 15px 10px;
+    background-image: linear-gradient(#062256, #337ab7);
+    color: #F7F7F7;
+    padding: 7px;
+    font-size: 15px;
+    font-family: Trebuchet MS;
+    border: none;
+    overflow: visible;
+}
+
+.form-signin-my{
+    width: 380px;
+    height: 420px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top:80px;
+    margin-bottom:110px;
+}
+
+.fieldsetorder {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 4em;
+    padding-right: 0.75em;
+    border: 5px groove;
+}
+
+.legendorder{
+    width: 180px;
+    color: brown;
+    font:28px bold ;
+    text-align: center;
+
+}
+
+.legendorder-suppliers{
+    width: 280px;
+    color: black;
+    font: 25px "Segoe UI Semibold";
+    margin-left: 150px;
+}
+
+.main__text{
+    font: 20px "Arial Black";
+}

@@ -1,0 +1,25 @@
+<?php
+
+session_start();
+
+require_once('I:\OServer\domains\yo\Classes\PhpPageRenderer.php');
+require_once('I:\OServer\domains\yo\Classes\PhpPageRenderer.php');
+require_once('I:\OServer\domains\yo\Factory\Factory.php');
+require_once('I:\OServer\domains\yo\Classes\MainAlleLieferanten.php');
+
+if (!isset($_SESSION['userid'])) {
+    die('<meta http-equiv="refresh" content="0; URL=Anmeldung.php">');
+}
+
+$factory = new Factory();
+$supplierRepos = $factory->createSupplierRepository();
+$userRepos = $factory->createUserRepository();
+
+
+
+$suppliersArray = $supplierRepos->getAllSuppliers();
+$user = $userRepos->getById($_SESSION['userid']);
+
+$main = new MainAlleLieferanten($suppliersArray, $user);
+$phpPageRenderer = new PhpPageRenderer();
+$phpPageRenderer->renderContent($main);
